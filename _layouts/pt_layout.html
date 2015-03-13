@@ -3,29 +3,7 @@
   {% include head.html %}
   <body>
     <div id="wrap" class="container">
-      <div id="topbar" class="span-22 left right">
-        <div class="langbar clearfix"></div>
-        <div class="search_container clearfix">
-          <div class="search_box">
-            <div class="i18n_pt"><a href="/pt/{% if page.id != 'embassy' %}{{page.id}}.html{% endif %}" title="português"><img src="{% asset_path pt.png %}" alt="português"/></a></div>
-            <div class="i18n_en"><a href="/en/{% if page.id != 'embassy' %}{{page.id}}.html{% endif %}" title="english"><img src="{% asset_path gb.png %}" alt="english" /></a></div>
-            <form onsubmit="return executeQuery();" id="cse-search-box-form-id" style="float:left">
-              <input id="cse-search-input-box-id" type="text" name="search" />
-              <input type="submit" name="Btn_Search" value="Search" id="Btn_Search"  />
-            </form>
-            <script type="text/javascript"
-              src="//www.google.com/cse/brand?form=cse-search-box-form-id&inputbox=cse-search-input-box-id">
-            </script>
-          </div>
-        </div>
-      </div>
-
-      <div id="header" class="span-22 left right">
-        <div id="logotipo">
-          <h1><img src="{% asset_path logo_emb_pt.png %}" width="415" height="90" alt="Embaixada Portuguesa em Singapura" /></h1>
-        </div>
-      </div>
-
+      {% include header.html %}
       <div id="body" class="clearfix span-22 left right">
         <nav id="navigation" class="span-5">
           <ul id="nav">

@@ -27,15 +27,15 @@ h3 {
 	min-height: 100%;
 }
 
-#header{
-	position: relative;
-	padding-top: 10px;	
-	margin-top: 0px;
-	
-	background: url('../images/merlion.png') no-repeat top left;
-
-}
-
+/* #header{ */
+/* 	position: relative; */
+/* 	padding-top: 10px;	 */
+/* 	margin-top: 0px; */
+/* 	 */
+/* 	background: url({%asset_path merlion.png%}) no-repeat top left; */
+/*  */
+/* } */
+/*  */
 #header h1 {
 	padding: 0;
 	margin: 0px 0 10px 125px;
