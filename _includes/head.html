@@ -8,8 +8,10 @@
   <meta name="description-portuguese" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description_pt }}{% endif %}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="shortcut icon" href="{% asset_path escudo.png %}">
   {% include scripts.html %}
-  <link rel="stylesheet" href="{{ "/css/master.css" | prepend: site.baseurl }}">
+  <!-- <link rel="stylesheet" href="{{ "/css/master.css" | prepend: site.baseurl }}"> -->
+  {% stylesheet "master" %}
 
   <!-- Put the following javascript before the closing </head> tag. -->
   <script>
