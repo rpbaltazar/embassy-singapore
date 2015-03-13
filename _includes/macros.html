@@ -1,0 +1,17 @@
+{% macro gallery_image(image, title) %}
+{% spaceless %}
+<div class="item"><a class="galeria" title="{{ title }}" href="/images/galeria/{{ image }}.jpeg" rel="galeria"><img src="/images/thumbs/{{ image }}_tn.jpeg"/></a></div>
+{% endspaceless %}
+{% endmacro %}
+
+{% macro tourism(image, title, url) %}
+{% spaceless %}
+<div class="item">
+	<a target="_blank" class="galeria" title="{{ title }}" href="{{ url }}">
+		<img src="/images/turismo/{{ image }}.jpeg"/>
+		<div>{{ title }}</div>
+	</a>
+</div>
+{% endspaceless %}
+{% endmacro %}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div id="wrap" class="container">
+      <div id="topbar" class="span-22 left right">
+        <div class="langbar clearfix"></div>
+        <div class="search_container clearfix">
+          <div class="search_box">
+            <div class="i18n_pt"><a href="/pt/{% if page.id != 'embassy' %}{{page.id}}.html{% endif %}" title="português"><img src="{% asset_path pt.png %}" alt="português"/></a></div>
+            <div class="i18n_en"><a href="/en/{% if page.id != 'embassy' %}{{page.id}}.html{% endif %}" title="english"><img src="{% asset_path gb.png %}" alt="english" /></a></div>
+            <form onsubmit="return executeQuery();" id="cse-search-box-form-id" style="float:left">
+              <input id="cse-search-input-box-id" type="text" name="search" />
+              <input type="submit" name="Btn_Search" value="Search" id="Btn_Search"  />
+            </form>
+            <script type="text/javascript"
+              src="//www.google.com/cse/brand?form=cse-search-box-form-id&inputbox=cse-search-input-box-id">
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div id="header" class="span-22 left right">
+          <div id="logotipo">
+            <h1><img src="{% asset_path logo_emb_en.png %}" width="415" height="90" alt="Portuguese Embassy in Singapore"/></h1>
+          </div>
+      </div>
+
+      <div id="body" class="clearfix span-22 left right">
+        <nav id="navigation" class="span-5">
+            <ul id="nav">
+              <li class="{% if page.id == 'embassy' %}current{% endif %}"><a href="{{site.root}}/en/">Embassy</a></li>
+              <li>
+                <a href="{{site.root}}/en/#">Consular Affairs</a>
+                <ul style="{% if not ['registration','marriage', 'birth', 'nationality', 'visa','passport', 'idcard', 'invest'].include? page.id %} display:none {% endif %}">
+                <li class="{% if page.id == 'registration' %}current{% endif %}"><a href="{{site.root}}/en/registration.html">Consular registration</a></li>
+                  <li class="{% if page.id == 'marriage' %}current{% endif %}"><a href="{{site.root}}/en/marriage.html">Marriage</a></li>
+                  <li class="{% if page.id == 'birth' %}current{% endif %}"><a href="{{site.root}}/en/birth.html">Birth registration</a></li>
+                  <li class="{% if page.id == 'nationality' %}current{% endif %}"><a href="{{site.root}}/en/nationality.html">Nationality</a></li>
+                  <li class="{% if page.id == 'visa' %}current{% endif %}"><a href="{{site.root}}/en/visa.html">Visa</a></li>
+                  <li class="{% if page.id == 'passport' %}current{% endif %}"><a href="{{site.root}}/en/passport.html">Passport</a></li>
+                  <li class="{% if page.id == 'idcard' %}current{% endif %}"><a href="{{site.root}}/en/idcard.html">Identity Card</a></li>
+                  <li class="{% if page.id == 'invest' %}current{% endif %}"><a href="{{site.root}}/en/invest.html">Support for Diaspora's Entrepreneurs</a></li>
+                  <li class="{% if page.id == 'taxes' %}current{% endif %}"><a href="{{site.root}}/en/taxes.html">Non-regular residents tax regime</a></li>
+              </ul>
+              </li>
+              <li>
+                <a href="{{site.root}}/en/#">Portugal</a>
+                <ul  style="{% if not ['location','history', 'climate', 'cities', 'admin','portuguese', 'economy'].include? page.id %} display:none {% endif %}">
+                  <li class="{% if page.id == 'location' %}current{% endif %}"><a href="{{site.root}}/en/location.html">Location</a></li>
+                  <li class="{% if page.id == 'history' %}current{% endif %}"><a href="{{site.root}}/en/history.html">History</a></li>
+                  <li class="{% if page.id == 'climate' %}current{% endif %}"><a href="{{site.root}}/en/climate.html">Climate</a></li>
+                  <li class="{% if page.id == 'cities' %}current{% endif %}"><a href="{{site.root}}/en/cities.html">Major cities</a></li>
+                  <li class="{% if page.id == 'admin' %}current{% endif %}"><a href="{{site.root}}/en/admin.html">Local Administration</a></li>
+                  <li class="{% if page.id == 'portuguese' %}current{% endif %}"><a href="{{site.root}}/en/portuguese.html">Portuguese Language</a></li>
+                  <li class="{% if page.id == 'economy' %}current{% endif %}"><a href="{{site.root}}/en/economy.html">Economy</a></li>
+                </ul>
+              </li>
+              <li class="{% if page.id == 'diplomacy' %}current{% endif %}"><a href="{{site.root}}/en/diplomacy.html">Economic Diplomacy</a></li>
+              <li class="{% if page.id == 'bilateralagree' %}current{% endif %}"><a href="{{site.root}}/en/bilateralagree.html">Bilateral Agreements</a></li>
+              <li class="{% if page.id == 'pbs' %}current{% endif %}"><a href="{{site.root}}/en/pbs.html">PBS</a></li>
+              <li>
+                <a href="{{site.root}}/en/#">Culture</a>
+                <ul  style="{% if not ['scholarships','heritage', 'media', 'camoes', 'minculture'].include? page.id %} display:none {% endif %}">
+                  <li class="{% if page.id == 'scholarships' %}current{% endif %}"><a href="{{site.root}}/en/scholarships.html">Scholarships</a></li>
+                  <li class="{% if page.id == 'heritage' %}current{% endif %}"><a href="{{site.root}}/en/heritage.html">World Heritage</a></li>
+                  <li class="{% if page.id == 'media' %}current{% endif %}"><a href="{{site.root}}/en/media.html">Portuguese Media</a></li>
+                  <li class="{% if page.id == 'camoes' %}current{% endif %}"><a href="{{site.root}}/en/camoes.html">Cam&otilde;es Institute</a></li>
+                  <li class="{% if page.id == 'minculture' %}current{% endif %}"><a href="{{site.root}}/en/minculture.html">Ministry of Culture</a></li>
+                </ul>
+              </li>
+              <li class="{% if page.id == 'tourism' %}current{% endif %}"><a href="{{site.root}}/en/tourism.html">Tourism</a></li>
+              <li class="{% if page.id == 'contacts' %}current{% endif %}"><a href="{{site.root}}/en/contacts.html">Contact</a></li>
+            </ul>
+
+
+            <div class="intitutions">
+              <a href="http://www.instituto-camoes.pt/"><img src="{% asset_path camoes.png %}" alt="Instituto Camões" title="Instituto Camões" /></a>
+              <div class="division"></div>
+              <a href="http://www.portugalglobal.pt/"><img src="{% asset_path aicep.png %}" alt="AICEP" title="AICEP" /></a>
+              <div class="division"></div>
+              <a href="http://www.visitportugal.com/"><img src="{% asset_path tp.png %}" alt="Turismo de Portugal" title="Visit Portugal" /></a>
+            </div>
+            <div class="spacer">&nbsp;</div>
+          </nav>
+
+          <div id="content-search" class="span-16 right last " style="display:none">
+            <h2>Search results</h2>
+            <gcse:searchresults-only></gcse:searchresults-only>
+          </div>
+
+          <div id="content" class="span-16 right last ">
+            <h2>{{ page.title }}</h2>
+            {{ content|raw }}
+            <div class="clear">&nbsp;</div>
+            <div class='goToTop'>[ <a href="#topbar">Top</a> ]</div>
+          </div>
+        </div>
+
+  <div id="footer" >
+    <div class="container ">
+      <div class="span-23 right left" style="text-align: center">
+        <!--<img src="/images/logo-gov.png"/><br/> -->
+        &copy; 2013 Portuguese Embassy in Singapore
+      </div>
+    </div>
+  </div>
+
+  <!-- Element code snippet -->
+<script type="text/javascript">
+  function executeQuery() {
+    $('#content').hide();
+    $('#content-search').show();
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+</script>
+
+    <!-- {% include footer.html %} -->
+  </body>
+
+</html>

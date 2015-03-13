@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div id="wrap" class="container">
+      <div id="topbar" class="span-22 left right">
+        <div class="langbar clearfix"></div>
+        <div class="search_container clearfix">
+          <div class="search_box">
+            <div class="i18n_pt"><a href="/pt/{% if page.id != 'embassy' %}{{page.id}}.html{% endif %}" title="português"><img src="{% asset_path pt.png %}" alt="português"/></a></div>
+            <div class="i18n_en"><a href="/en/{% if page.id != 'embassy' %}{{page.id}}.html{% endif %}" title="english"><img src="{% asset_path gb.png %}" alt="english" /></a></div>
+            <form onsubmit="return executeQuery();" id="cse-search-box-form-id" style="float:left">
+              <input id="cse-search-input-box-id" type="text" name="search" />
+              <input type="submit" name="Btn_Search" value="Search" id="Btn_Search"  />
+            </form>
+            <script type="text/javascript"
+              src="//www.google.com/cse/brand?form=cse-search-box-form-id&inputbox=cse-search-input-box-id">
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div id="header" class="span-22 left right">
+        <div id="logotipo">
+          <h1><img src="{% asset_path logo_emb_pt.png %}" width="415" height="90" alt="Embaixada Portuguesa em Singapura" /></h1>
+        </div>
+      </div>
+
+      <div id="body" class="clearfix span-22 left right">
+        <nav id="navigation" class="span-5">
+          <ul id="nav">
+            <li class="{% if page.id == 'embassy' %}current{% endif %}"><a href="{{page.root}}/pt/">Embaixada</a></li>
+            <li>
+              <a href="{{page.root}}/pt/#">Assuntos Consulares</a>
+              <ul style="{% if not ['registration','marriage', 'birth', 'nationality', 'visa','passport', 'idcard', 'invest'].include? page.id %} display:none {% endif %}">
+                <li class="{% if page.id == 'registration' %}current{% endif %}"><a href="{{page.root}}/pt/registration.html">Inscrição Consular</a></li>
+                <li class="{% if page.id == 'marriage' %}current{% endif %}"><a href="{{page.root}}/pt/marriage.html">Casamento</a></li>
+                <li class="{% if page.id == 'birth' %}current{% endif %}"><a href="{{page.root}}/pt/birth.html">Registo de nascimento</a></li>
+                <li class="{% if page.id == 'nationality' %}current{% endif %}"><a href="{{page.root}}/pt/nationality.html">Nacionalidade</a></li>
+                <li class="{% if page.id == 'visa' %}current{% endif %}"><a href="{{page.root}}/pt/visa.html">Visto</a></li>
+                <li class="{% if page.id == 'passport' %}current{% endif %}"><a href="{{page.root}}/pt/passport.html">Passaporte</a></li>
+                <li class="{% if page.id == 'idcard' %}current{% endif %}"><a href="{{page.root}}/pt/idcard.html">Bilhete de Identidade</a></li>
+                <li class="{% if page.id == 'invest' %}current{% endif %}"><a href="{{page.root}}/pt/invest.html">Apoio ao Investidor da Diáspora</a></li>
+                <li class="{% if page.id == 'taxes' %}current{% endif %}"><a href="{{page.root}}/pt/taxes.html">Regime fiscal residentes não habituais</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="{{page.root}}/pt/#">Portugal</a>
+              <ul  style="{% if not ['location','history', 'climate', 'cities', 'admin','portuguese', 'economy'].include? page.id %} display:none {% endif %}">
+                <li class="{% if page.id == 'location' %}current{% endif %}"><a href="{{page.root}}/pt/location.html">Localização</a></li>
+                <li class="{% if page.id == 'history' %}current{% endif %}"><a href="{{page.root}}/pt/history.html">História</a></li>
+                <li class="{% if page.id == 'climate' %}current{% endif %}"><a href="{{page.root}}/pt/climate.html">Clima</a></li>
+                <li class="{% if page.id == 'cities' %}current{% endif %}"><a href="{{page.root}}/pt/cities.html">Principais Cidades</a></li>
+                <li class="{% if page.id == 'admin' %}current{% endif %}"><a href="{{page.root}}/pt/admin.html">Administração Local</a></li>
+                <li class="{% if page.id == 'portuguese' %}current{% endif %}"><a href="{{page.root}}/pt/portuguese.html">Língua Portuguesa</a></li>
+                <li class="{% if page.id == 'economy' %}current{% endif %}"><a href="{{page.root}}/pt/economy.html">Economia</a></li>
+              </ul>
+            </li>
+            <li class="{% if page.id == 'diplomacy' %}current{% endif %}"><a href="{{page.root}}/pt/diplomacy.html">Diplomacia Económica</a></li>
+            <li class="{% if page.id == 'bilateralagree' %}current{% endif %}"><a href="{{page.root}}/pt/bilateralagree.html">Acordos Bilaterais</a></li>
+            <li class="{% if page.id == 'pbs' %}current{% endif %}"><a href="{{page.root}}/pt/pbs.html">PBS</a></li>
+            <li>
+              <a href="{{page.root}}/pt/#">Cultura</a>
+              <ul  style="{% if not ['scholarships','heritage', 'media', 'camoes', 'minculture'].include? page.id %} display:none {% endif %}">
+                <li class="{% if page.id == 'scholarships' %}current{% endif %}"><a href="{{page.root}}/pt/scholarships.html">Bolsas de Estudo</a></li>
+                <li class="{% if page.id == 'heritage' %}current{% endif %}"><a href="{{page.root}}/pt/heritage.html">Património Mundial</a></li>
+                <li class="{% if page.id == 'media' %}current{% endif %}"><a href="{{page.root}}/pt/media.html">Imprensa Portuguesa</a></li>
+                <li class="{% if page.id == 'camoes' %}current{% endif %}"><a href="{{page.root}}/pt/camoes.html">Instituto Cam&otilde;es</a></li>
+                <li class="{% if page.id == 'minculture' %}current{% endif %}"><a href="{{page.root}}/pt/minculture.html">Ministério da Cultura</a></li>
+              </ul>
+            </li>
+            <li class="{% if page.id == 'suggestions' %}current{% endif %}"><a href="{{page.root}}/pt/suggestions.html">Conselhos aos Viajantes</a></li>
+            <li class="{% if page.id == 'tourism' %}current{% endif %}"><a href="{{page.root}}/pt/tourism.html">Turismo</a></li>
+            <li class="{% if page.id == 'contacts' %}current{% endif %}"><a href="{{page.root}}/pt/contacts.html">Contactos</a></li>
+          </ul>
+          <div class="intitutions">
+            <a href="http://www.instituto-camoes.pt/"><img src="{% asset_path camoes.png %}" alt="Instituto Camões" title="Instituto Camões" /></a>
+            <div class="division"></div>
+            <a href="http://www.portugalglobal.pt/"><img src="{% asset_path aicep.png %}" alt="AICEP" title="AICEP"/></a>
+            <div class="division"></div>
+            <a href="http://www.visitportugal.com/"><img src="{% asset_path tp.png %}" alt="Turismo de Portugal" title="Turismo de Portugal" /></a>
+          </div>
+          <div class="spacer">&nbsp;</div>
+        </nav>
+
+        <div id="content-search" class="span-16 right last" style="display:none">
+          <h2>Resultados da Pesquisa</h2>
+          <gcse:searchresults-only></gcse:searchresults-only>
+        </div>
+
+        <div id="content" class="span-16 right last">
+          <h2>{{ page.title }}</h2>
+          {{ content|raw }}
+          <div class="clear">&nbsp;</div>
+          <div class='goToTop'>[ <a href="#topbar">Topo</a> ]</div>
+        </div>
+      </div>
+    </div>
+    <!-- {% include footer.html %} -->
+  </body>
+
+</html>
