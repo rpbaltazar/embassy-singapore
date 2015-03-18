@@ -19,3 +19,11 @@ github_username:  rpbaltazar
 markdown: kramdown
 
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+sass:
+  style: compressed
