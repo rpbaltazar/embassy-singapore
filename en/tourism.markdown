@@ -35,11 +35,11 @@ Portuguese forests also enhances the use of tourism, most notably the unique Por
 </div>
 
 <div id="gallery_container clearfix">
-	{{ mac.tourism("ITI_thumbnail", "Itineraries", "http://www.visitportugal.com/brochures/EN/Itineraries/Itineraries.html") }}
-	{{ mac.tourism("NAT_thumbnail", "Nature", "http://www.visitportugal.com/brochures/EN/Nature/Nature.html") }}
-	{{ mac.tourism("PAT_thumbnail", "Heritage", "http://www.visitportugal.com/brochures/EN/Heritage/Heritage.html") }}
-	<div class="clear nospace">&nbsp;</div>
-	{{ mac.tourism("SOL_thumbnail", "Sun And Sea", "http://www.visitportugal.com/brochures/EN/SunandSea/Sunandsea.html") }}
-	{{ mac.tourism("GOLFthumbnail", "Golf", "http://www.visitportugal.com/brochures/EN/Golf/flipviewerxpress.html") }}
-	{{ mac.tourism("capaPortugal", "Portugal", "http://www.visitportugal.com/brochures/EN/Portugal/Portugal.html") }}
+  {% include tourism.html image="ITI_thumbnail" title="Itineraries" url="http://www.visitportugal.com/brochures/EN/Itineraries/Itineraries.html" %}
+  {% include tourism.html image="NAT_thumbnail" title="Nature" url="http://www.visitportugal.com/brochures/EN/Nature/Nature.html" %}
+  {% include tourism.html image="PAT_thumbnail" title="Heritage" url="http://www.visitportugal.com/brochures/EN/Heritage/Heritage.html" %}
+  <div class="clear nospace">&nbsp;</div>
+  {% include tourism.html image="SOL_thumbnail" title="Sun And Sea" url="http://www.visitportugal.com/brochures/EN/SunandSea/Sunandsea.html" %}
+  {% include tourism.html image="GOLFthumbnail" title="Golf" url="http://www.visitportugal.com/brochures/EN/Golf/flipviewerxpress.html" %}
+  {% include tourism.html image="capaPortugal" title="Portugal" url="http://www.visitportugal.com/brochures/EN/Portugal/Portugal.html" %}
 </div>

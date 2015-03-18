@@ -36,11 +36,11 @@ A floresta portuguesa potencia também a utilização turística, sendo de desta
 
 
 <div id="gallery_container clearfix">
-	{{ mac.tourism("ITI_thumbnail", "Itenerários", "http://www.visitportugal.com/brochures/PT/Itinerarios/index.html") }}
-	{{ mac.tourism("NAT_thumbnail", "Natureza", "http://www.visitportugal.com/brochures/PT/Natureza/index.html") }}
-	{{ mac.tourism("PAT_thumbnail", "Património", "http://www.visitportugal.com/brochures/PT/Patrimonio/index.html") }}
-	<div class="clear nospace">&nbsp;</div>
-	{{ mac.tourism("SOL_thumbnail", "Sol e Mar", "http://www.visitportugal.com/brochures/PT/SoleMar/index.html") }}
-	{{ mac.tourism("GOLFthumbnail", "Golfe", "http://www.visitportugal.com/brochures/PT/Golfe/flipviewerxpress.html") }}
-	{{ mac.tourism("capaPortugal", "Portugal", "http://www.visitportugal.com/brochures/PT/Portugal/FlipViewerXpress.html") }}
+  {% include tourism.html image="ITI_thumbnail" title="Itenerários" url="http://www.visitportugal.com/brochures/PT/Itinerarios/index.html" %}
+  {% include tourism.html image="NAT_thumbnail" title="Natureza" url="http://www.visitportugal.com/brochures/PT/Natureza/index.html" %}
+  {% include tourism.html image="PAT_thumbnail" title="Património" url="http://www.visitportugal.com/brochures/PT/Patrimonio/index.html" %}
+  <div class="clear nospace">&nbsp;</div>
+  {% include tourism.html image="SOL_thumbnail" title="Sol e Mar" url="http://www.visitportugal.com/brochures/PT/SoleMar/index.html" %}
+  {% include tourism.html image="GOLFthumbnail" title="Golfe" url="http://www.visitportugal.com/brochures/PT/Golfe/flipviewerxpress.html" %}
+  {% include tourism.html image="capaPortugal" title="Portugal" url="http://www.visitportugal.com/brochures/PT/Portugal/FlipViewerXpress.html" %}
 </div>
