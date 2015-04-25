@@ -3,29 +3,29 @@ id: suggestions
 title: Conselhos aos Viajantes
 layout: pt_layout
 ---
-<h3>Informação geral</h3>
+###Informação geral
 
 As presentes informações não possuem natureza vinculativa, funcionando apenas como indicações e conselhos que são susceptíveis de alteração a qualquer momento. Nem o Estado Português, nem as representações diplomáticas e consulares, poderão ser responsabilizadas pelos danos ou prejuízos em pessoas e/ou bens delas advenientes.
 
-<h3>Clima</h3>
+###Clima
 
 Tropical, quente e húmido.
 
-<h3>Línguas</h3>
+###Línguas
 
 Quatro línguas possuem o estatuto de língua oficial: o inglês, o chinês, o malaio e o tamil. O Inglês é, em regra, falado por toda a população.
 
-<h3>Moeda Local</h3>
+###Moeda Local
 
-Dólar de Singapura. A taxa de câmbio pode ser consultada no site do Banco de Portugal: http://www.bportugal.pt/pt-PT/Estatisticas/Dominios%20Estatisticos/EstatisticasCambiais/Paginas/Taxasdereferenciadiarias.aspx
+Dólar de Singapura. A taxa de câmbio pode ser consultada no site do [Banco de Portugal](http://www.bportugal.pt/pt-PT/Estatisticas/Dominios%20Estatisticos/EstatisticasCambiais/Paginas/Taxasdereferenciadiarias.aspx)
 
-<h3>Regime de entrada e estada</h3>
+###Regime de entrada e estada
 
 Os portugueses portadores de passaporte recebem um visto de turista de até três meses que é emitido à chegada ao aeroporto.
 
 Os cidadãos portugueses que pretendam deslocar-se a Singapura devem ser portadores de passaporte cujo prazo de validade mínimo seja, à data de entrada no país, de, pelo menos, 6 meses.
 
-<h3>Condições de segurança</h3>
+###Condições de segurança
 
 Muito boas. Taxa de criminalidade bastante reduzida.
 
@@ -33,13 +33,13 @@ Aplicação de sanções pecuniárias a quem fume em áreas não autorizadas, de
 
 O tráfico de drogas é punível com a pena de morte.
 
-<h3>Transportes</h3>
+###Transportes
 
 Singapura é servida por dois aeroportos internacionais: Paya Lebar e Changi.
 
 No que concerne aos transportes públicos, toda a cidade de Singapura é bem servida pelo metro (MRT) e por autocarros.
 
-<h3>Cuidados de saúde</h3>
+###Cuidados de saúde
 
 A rede sanitária é muito boa.
 
@@ -47,23 +47,34 @@ A rede sanitária é muito boa.
 
 Apesar de não ser necessária vacinação para se deslocar até Singapura, recomenda-se a ida a uma consulta do viajante. Frise-se que para muitos dos países da região são necessárias precauções adicionais.
 
-<h3>Telecomunicações</h3>
+###Telecomunicações
 
 Facilidade de acesso telefónico e de uso da internet.
 
-<h3>Endereços úteis</h3>
+###Endereços úteis
 
-Embaixada de Portugal em Singapura: http://www.embaixadasingapura.com
+[Embaixada de Portugal em Singapura](http://www.embaixadasingapura.com)
 
-<h3>Informações úteis</h3>
+### Informações úteis
 
-Representação diplomática Portuguesa: Embaixada de Portugal em Singapura cita 143, Cecil Street, GB Building #06-02, 069542 Singapura
+Representação diplomática Portuguesa:
 
-Telefone: +6562242256
-Fax: +6562242356
+Embaixada de Portugal em Singapura cita
+<ul class="address">
+  <li> 3 Killiney Road, #05-08 </li>
+  <li> Winsland House 1 </li>
+  <li> Singapore 239519 </li>
+</ul>
+
+<ul class="address">
+  <li> Contacto: +65 6224 2256 </li>
+  <li> Fax: +65 6224 2356 </li>
+  <li> Contacto de Emergência Consular: +65 8571 7800 </li>
+  <li> E-mail: singapura@mne.pt </li>
+</ul>
 
 Endereços das representações consulares portuguesas (postos e secções consulares) no estrangeiro:
-http://www.secomunidades.pt/
+[Portal das Comunidades Portuguesas](http://www.secomunidades.pt)
 
 Endereços das representações estrangeiras (diplomáticas e consulares) em Portugal:
-http://www.min-nestrangeiros.pt
+[Governo de Portugal](http://www.min-nestrangeiros.pt)
