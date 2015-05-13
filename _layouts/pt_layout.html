@@ -39,7 +39,8 @@
             <li class="{% if page.id == 'pbs' %}current{% endif %}"><a href="{{page.root}}/pt/pbs.html">PBS</a></li>
             <li>
               <a href="{{page.root}}/pt/#">Cultura</a>
-              <ul  style="{% if not ['scholarships','heritage', 'media', 'camoes', 'minculture'].include? page.id %} display:none {% endif %}">
+              <ul  style="{% if not ['agenda', 'scholarships','heritage', 'media', 'camoes', 'minculture'].include? page.id %} display:none {% endif %}">
+                <li class="{% if page.id == 'agenda' %}current{% endif %}"><a href="{{site.root}}/en/agenda.html">Agenda</a></li>
                 <li class="{% if page.id == 'scholarships' %}current{% endif %}"><a href="{{page.root}}/pt/scholarships.html">Bolsas de Estudo</a></li>
                 <li class="{% if page.id == 'heritage' %}current{% endif %}"><a href="{{page.root}}/pt/heritage.html">Património Mundial</a></li>
                 <li class="{% if page.id == 'media' %}current{% endif %}"><a href="{{page.root}}/pt/media.html">Imprensa Portuguesa</a></li>
